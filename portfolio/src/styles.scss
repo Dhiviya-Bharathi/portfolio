@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+// All common and global styles are added here
+@import url(assets/theme-blue-pink/style.scss);
+
+@font-face {
+  font-family: "Raleway-Regular";
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  src: url(assets/fonts/Raleway-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway-Bold";
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  src: url(assets/fonts/Raleway-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway-Thin";
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  src: url(assets/fonts/Raleway-Thin.ttf) format("truetype");
+}
+
+* {
+  font-family: "Raleway-Bold";
+}
+// Spacing
+$spacing-small: 8px;
+$spacing-medium: 16px;
+$spacing-large: 24px;
