@@ -1,1 +1,13 @@
-<p>header works!</p>
+<div class="header-container">
+  <div class="logo-details">
+    <img src="assets/images/letter-D-logo.jpg" alt="Image Description" />
+    <span>dhilipram&#64;gmail.com</span>
+  </div>
+  <div class="nav-container">
+    <nav>
+      <ul>
+        <li *ngFor="let link of navLinks">{{ link.label }}</li>
+      </ul>
+    </nav>
+  </div>
+</div>

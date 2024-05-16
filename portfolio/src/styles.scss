@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 // All common and global styles are added here
-@import url(assets/theme-blue-pink/style.scss);
+@use 'assets/theme-black-purple/style.scss' as theme;
 
 @font-face {
   font-family: "Raleway-Regular";
@@ -33,3 +33,8 @@
 $spacing-small: 8px;
 $spacing-medium: 16px;
 $spacing-large: 24px;
+// Configure the colors from the theme template
+$primary-color: theme.$primary-color;
+$secondary-color: theme.$secondary-color;
+$primary-font-color: theme.$primary-font-color;
+$secondary-font-color: theme.$secondary-font-color;
