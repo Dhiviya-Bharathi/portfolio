@@ -6,7 +6,7 @@
   <div class="skills-cards">
     <div *ngFor="let catogery of techSkills">
       <div *ngFor="let skill of catogery.items ">
-        <fa-icon [icon]="skill.icon"></fa-icon>
+        <fa-icon [icon]="getFontAwesomeIcon(skill.icon)"></fa-icon>
         <span>{{skill.name}}</span>
       </div>
     </div>

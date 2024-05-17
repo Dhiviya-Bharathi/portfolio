@@ -52,4 +52,14 @@ export class SkillsComponent {
       ],
     },
   ];
+
+  getFontAwesomeIcon(skillName: string) {
+    const iconMap: any = {
+      angular: 'angular',
+      Vuejs: 'vuejs',
+      Bootstrap: 'bootstrap'
+    };
+    console.log('iconMap[skillName]', iconMap[skillName])
+    return iconMap[skillName] || 'question'; // Default icon if not found
+  }
 }
